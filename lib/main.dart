@@ -1,5 +1,8 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:vibe_tunes/screens/splash_screen.dart';
 import 'package:vibe_tunes/screens/welcome_screen.dart';
 
 void main() {
@@ -14,7 +17,7 @@ class VibeTunesApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: const WelcomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }
