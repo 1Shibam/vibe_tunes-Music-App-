@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:vibe_tunes/screens/home_page.dart';
+import 'package:vibe_tunes/screens/music_home_screen.dart';
 import 'package:vibe_tunes/screens/splash_screen.dart';
 import 'package:vibe_tunes/utils/app_colors.dart';
 import 'package:vibe_tunes/utils/app_fonts.dart';
@@ -157,7 +157,7 @@ class WelcomePage extends ConsumerWidget {
                 Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const HomePage(),
+                      builder: (context) => const MusicHomeScreen(),
                     ));
               },
               child: Container(

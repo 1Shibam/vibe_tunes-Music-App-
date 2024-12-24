@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:vibe_tunes/screens/home_page.dart';
+import 'package:vibe_tunes/screens/music_home_screen.dart';
 import 'package:vibe_tunes/screens/welcome_screen.dart';
 import 'package:vibe_tunes/utils/app_colors.dart';
 
@@ -54,7 +54,7 @@ class SplashScreenState extends State<SplashScreen> {
           Navigator.pushReplacement(
               context,
               MaterialPageRoute(
-                builder: (context) => const HomePage(),
+                builder: (context) => const MusicHomeScreen(),
               ));
         } else {
           Navigator.pushReplacement(
@@ -63,13 +63,12 @@ class SplashScreenState extends State<SplashScreen> {
                 builder: (context) => const WelcomeScreen(),
               ));
         }
-      }
-      else{
+      } else {
         Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const WelcomeScreen(),
-          ));
+            context,
+            MaterialPageRoute(
+              builder: (context) => const WelcomeScreen(),
+            ));
       }
     });
   }
